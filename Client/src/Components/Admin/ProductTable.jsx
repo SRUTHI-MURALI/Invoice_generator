@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Button, Table, ToastContainer } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
@@ -12,6 +12,7 @@ function ProductTable() {
     const getProducts = async () => {
       try {
         const response = await axios.get("http://localhost:3001/admin/product");
+      
         setProductList(response.data.allProducts);
       } catch (error) {
         console.error(error);
@@ -60,7 +61,7 @@ function ProductTable() {
                   <td>{item?.price}</td>
                   <td>
                     <img
-                      // src={`${Image_Url}/${item?.photo}`}
+                       src={`https://res.cloudinary.com/dnkc0odiw/image/upload/${item?.photo}`}
                       alt="sample"
                       style={{ width: "40px" }}
                     />

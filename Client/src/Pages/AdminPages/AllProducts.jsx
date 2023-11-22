@@ -1,20 +1,17 @@
-import React from 'react'
-import Header from '../../Components/User/Header.jsx'
-import ProductTable from '../../Components/Admin/ProductTable.jsx'
-import { Container } from 'react-bootstrap'
+import React from "react";
+import Header from "../../Components/User/Header.jsx";
+import ProductTable from "../../Components/Admin/ProductTable.jsx";
+import { Container } from "react-bootstrap";
 
 function AllProducts() {
   return (
     <div>
-      <Header data={'admin'} />
+      <Header data={"admin"} />
       <Container>
-      
-      <ProductTable/>
+        <ProductTable />
       </Container>
-      
-      
     </div>
-  )
+  );
 }
 
-export default AllProducts
+export default AllProducts;

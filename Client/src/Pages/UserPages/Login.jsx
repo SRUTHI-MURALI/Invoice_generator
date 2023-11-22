@@ -22,7 +22,8 @@ function Login() {
   
   
       if(res.data){
-        const userData = res.data.userEmail;
+
+        const userData = res.data.user;
 
         localStorage.setItem("userData", JSON.stringify(userData));
         navigate('/products')

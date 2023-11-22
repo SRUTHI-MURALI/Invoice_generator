@@ -1,4 +1,4 @@
-import ProductSchema from "../model/productModel.js";
+import ProductSchema from "../Model/productModel.js";
 
 // get all products
 

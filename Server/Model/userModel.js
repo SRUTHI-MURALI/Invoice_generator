@@ -15,8 +15,15 @@ const userSchema = new Schema({
   },
   items: [
     {
-      type: Schema.Types.ObjectId,
-      required: true,
+      product: {
+        type: Schema.Types.ObjectId,
+        ref: 'product',
+        required: true,
+      },
+      count: {
+        type: Number,
+        default: 1,
+      },
     },
   ],
 });
